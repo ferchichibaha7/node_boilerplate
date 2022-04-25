@@ -75,7 +75,6 @@ export class userController {
       res.json({ message: "User retrieved", result: user })
     );
   };
-
   
 
   public deleteUser = (...params) => {
@@ -86,3 +85,4 @@ export class userController {
     });
   };
 }
+

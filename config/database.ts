@@ -10,10 +10,8 @@ const db_port = parseInt(process.env.DB_PORT);  // sequelize port accept only nu
 
 const sequelize = new Sequelize(db_name, db_user, db_pass, {
   host: db_host,
-  dialect: "mysql",
-  logging: false,
-  port: db_port,
-  
+  dialect: "postgres",
+  logging:false
 });
 
 const connectAuthenticate = () => {
